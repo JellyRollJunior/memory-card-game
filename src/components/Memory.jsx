@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Card } from './Card.jsx';
 import { searchGifs } from './memoryAPI.js';
-import prettyGuardianLogo  from './../assets/pretty-guardian-logo.png';
+import prettyGuardianLogo from './../assets/pretty-guardian-logo.png';
 export { Memory };
 
 const Memory = () => {
@@ -49,9 +49,9 @@ const Memory = () => {
     <>
       <header>
         <img src={prettyGuardianLogo} alt="" />
-        <h1>Sailor Moon Memory</h1>
       </header>
       <main>
+        <h1>Sailor Moon Memory</h1>
         <div className="score">
           <h2>High Score: {highScore}</h2>
           <h2>Score: {clickedGifs.size}</h2>

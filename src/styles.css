@@ -58,7 +58,6 @@ header {
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
-  
 }
 
 header > img {
@@ -66,7 +65,12 @@ header > img {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.score {
+  display: flex;
+  gap: 12px;
 }
 
 h2 {
@@ -95,9 +99,12 @@ h2 {
 }
 
 @media (min-width: 700px) {
-  .score {
-    display: flex;
-    gap: 12px;
+  header > img {
+    max-width: 110px;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   .card-holder {
@@ -113,6 +120,10 @@ h2 {
 }
 
 @media (min-width: 1400px) {
+  header > img {
+    max-width: 150px;
+  }
+
   .card-holder {
     gap: 26px;
   }
