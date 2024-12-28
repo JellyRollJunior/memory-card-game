@@ -113,8 +113,42 @@ footer .lace {
 }
 
 footer .footer-content {
+  padding-bottom: 12px;
+  color: white;
+  text-align: center;
   background-color: #b4aa82;
-  height: 100px;
+}
+
+a {
+  color: white;
+}
+
+.link-holder {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  padding: 12px
+}
+
+.link-holder > a {
+  --link-button-size: 40px;
+  width: var(--link-button-size);
+  height: var(--link-button-size);
+  padding: 0;
+  background-size: cover;
+}
+
+a.icon-github {
+  background-image: url(./assets/icons8-github-60.png);
+}
+
+a.icon-linkedin {
+  background-image: url(./assets/icons8-linkedin-50.png);
+}
+
+a.icon-instagram {
+  background-image: url(./assets/icons8-instagram-60.png);
 }
 
 @media (min-width: 700px) {
