@@ -51,23 +51,25 @@ const Memory = () => {
         <img src={prettyGuardianLogo} alt="" />
       </header>
       <main>
-        <h1>Sailor Moon Memory</h1>
-        <div className="score">
-          <h2>High Score: {highScore}</h2>
-          <h2>Score: {clickedGifs.size}</h2>
+        <div className="wrapper">
+          <h1>Sailor Moon Memory</h1>
+          <div className="score">
+            <h2>High Score: {highScore}</h2>
+            <h2>Score: {clickedGifs.size}</h2>
+          </div>
+          <section className="card-holder">
+            {gifs.map((gif) => {
+              return (
+                <Card
+                  url={gif.url}
+                  title={gif.title}
+                  key={gif.url}
+                  onClick={() => handleCardClick(gif.url)}
+                />
+              );
+            })}
+          </section>
         </div>
-        <section className="card-holder">
-          {gifs.map((gif) => {
-            return (
-              <Card
-                url={gif.url}
-                title={gif.title}
-                key={gif.url}
-                onClick={() => handleCardClick(gif.url)}
-              />
-            );
-          })}
-        </section>
       </main>
     </>
   );
