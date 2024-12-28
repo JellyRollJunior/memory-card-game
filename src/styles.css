@@ -38,8 +38,16 @@ h6 {
   overflow-wrap: break-word;
 }
 
+.card-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .card {
-  padding: 24px;
   max-width: 250px;
   border: 2px solid black;
+}
+
+.card > img {
+  width: 100%;
 }
