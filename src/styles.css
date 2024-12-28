@@ -53,10 +53,6 @@ main,
   align-items: center;
 }
 
-.wrapper {
-  margin-bottom: 24px;
-}
-
 header {
   padding: 8px;
   text-align: center;
@@ -110,6 +106,10 @@ h3 {
   height: 100%;
   width: 100%;
   object-fit: fill;
+}
+
+footer {
+  margin-top: 16px;
 }
 
 footer .lace {
@@ -189,10 +189,6 @@ a.icon-instagram {
 
   .card {
     border-width: 3px;
-  }
-
-  footer {
-    margin-top: 16px;
   }
 }
 
