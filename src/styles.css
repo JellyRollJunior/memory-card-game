@@ -37,3 +37,9 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+.card {
+  padding: 24px;
+  max-width: 250px;
+  border: 2px solid black;
+}
