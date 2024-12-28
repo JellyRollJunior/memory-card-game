@@ -28,9 +28,13 @@ const Memory = () => {
     setGifs(array);
   };
 
-  const displayWin = () => {
+  const displayWinModal = () => {
     document.querySelector('.win-modal').classList.add('visible');
   };
+
+  const closeWinModal = () => {
+    document.querySelector('.win-modal').classList.remove('visible');
+  }
 
   const handleCardClick = (url) => {
     if (clickedGifs.has(url)) {
@@ -44,7 +48,7 @@ const Memory = () => {
       }
       // if user score == NUM_CARDS, show victory message
       if (clickedGifs.size + 1 >= NUM_CARDS) {
-        displayWin();
+        displayWinModal();
       }
     }
     shuffleGifs();
@@ -54,8 +58,9 @@ const Memory = () => {
     <>
       <div className="win-modal">
         <div className='win-card'>
+          <button className="close" onClick={closeWinModal}>&times;</button>
           <img src={prettyGuardianLogo} alt="" />
-          <div>Congrats you win!</div>
+          <div>Congrats, you win! <br /> Wow you have great memory!</div>
         </div>
       </div>
       <header>
