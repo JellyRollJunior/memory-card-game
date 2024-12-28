@@ -15,6 +15,17 @@ const Memory = () => {
     searchGifs(THEME, NUM_CARDS).then((data) => setGifs(data));
   }, []);
 
+  const shuffleGifs = () => {
+    const array = gifs;
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    setGifs(array);
+  }
+
   const handleCardClick = (url) => {
     if (clickedGifs.has(url)) {
       // user has clicked this gif (reset score to 0)
@@ -26,6 +37,7 @@ const Memory = () => {
         setHighScore(clickedGifs.size + 1);
       }
     }
+    shuffleGifs();
   };
 
   return (
