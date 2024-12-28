@@ -48,8 +48,8 @@ const Memory = () => {
     <main>
       <h1>Memory</h1>
       <div className="score">
-        <div>High Score: {highScore}</div>
-        <div>Score: {clickedGifs.size}</div>
+        <h2>High Score: {highScore}</h2>
+        <h2>Score: {clickedGifs.size}</h2>
       </div>
       <section className="card-holder">
         {gifs.map((gif) => {
