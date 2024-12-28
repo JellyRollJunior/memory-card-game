@@ -9,6 +9,7 @@ const Memory = () => {
 
   const [gifs, setGifs] = useState([]);
   const [clickedGifs, setClickedGifs] = useState(new Set([]));
+  const [highScore, setHighScore] = useState(0);
 
   useEffect(() => {
     searchGifs(THEME, NUM_CARDS).then((data) => setGifs(data));
@@ -19,7 +20,11 @@ const Memory = () => {
       // user has clicked this gif (reset score to 0)
       setClickedGifs(new Set([]));
     } else {
+      // increment score
       setClickedGifs(new Set([...clickedGifs, url]));
+      if (clickedGifs.size >= highScore) {
+        setHighScore(clickedGifs.size + 1);
+      }
     }
   };
 
@@ -27,7 +32,7 @@ const Memory = () => {
     <>
       <div>
         <div>Score: {clickedGifs.size}</div>
-        <div>High Score: </div>
+        <div>High Score: {highScore}</div>
       </div>
       <section className="card-holder">
         {gifs.map((gif) => {
