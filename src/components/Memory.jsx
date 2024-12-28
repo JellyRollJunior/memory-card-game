@@ -24,7 +24,7 @@ const Memory = () => {
       array[j] = temp;
     }
     setGifs(array);
-  }
+  };
 
   const handleCardClick = (url) => {
     if (clickedGifs.has(url)) {
@@ -35,6 +35,10 @@ const Memory = () => {
       setClickedGifs(new Set([...clickedGifs, url]));
       if (clickedGifs.size >= highScore) {
         setHighScore(clickedGifs.size + 1);
+      }
+      // if user score == NUM_CARDS, show victory message
+      if (clickedGifs.size + 1 >= NUM_CARDS) {
+        alert('You win!');
       }
     }
     shuffleGifs();
