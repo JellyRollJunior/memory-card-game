@@ -46,7 +46,9 @@ html {
 
 header,
 main,
-.wrapper {
+.wrapper,
+div.win-modal.visible,
+.win-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,6 +158,26 @@ a.icon-linkedin {
 
 a.icon-instagram {
   background-image: url(./assets/icons8-instagram-60.png);
+}
+
+.win-modal {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.win-modal img {
+  max-width: 150px;
+}
+
+.win-card {
+  height: 250px;
+  width: 300px;
+  background-color: white;
+  border: 2px solid var(--site-color);
+  border-radius: 21px;
 }
 
 @media (min-width: 700px) {
