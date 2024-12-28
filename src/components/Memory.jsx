@@ -7,7 +7,7 @@ export { Memory };
 
 const Memory = () => {
   const THEME = 'sailor moon';
-  const NUM_CARDS = 3;
+  const NUM_CARDS = 12;
 
   const [gifs, setGifs] = useState([]);
   const [clickedGifs, setClickedGifs] = useState(new Set([]));
