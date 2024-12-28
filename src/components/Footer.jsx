@@ -12,12 +12,15 @@ const Footer = () => {
           </div>
           Created by JellyRollJunior (Brandon Lin)
           <br />
-          Assets from 
+          {' Assets from '}
           <a href="https://giphy.com/" target="_blank" rel="noopener noreferrer"
           >Giphy</a>
-          {' and '}
+          {', '}
           <a href="https://prettyguardians.com/" target="_blank" rel="noopener noreferrer"
           >PrettyGuardians</a>
+          {', and '}
+          <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer"
+          >Icons8</a>
         </div>
       </footer>
     );
