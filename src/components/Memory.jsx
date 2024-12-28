@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Card } from './Card.jsx';
 import { searchGifs } from './memoryAPI.js';
+import prettyGuardianLogo  from './../assets/pretty-guardian-logo.png';
 export { Memory };
 
 const Memory = () => {
@@ -45,24 +46,29 @@ const Memory = () => {
   };
 
   return (
-    <main>
-      <h1>Memory</h1>
-      <div className="score">
-        <h2>High Score: {highScore}</h2>
-        <h2>Score: {clickedGifs.size}</h2>
-      </div>
-      <section className="card-holder">
-        {gifs.map((gif) => {
-          return (
-            <Card
-              url={gif.url}
-              title={gif.title}
-              key={gif.url}
-              onClick={() => handleCardClick(gif.url)}
-            />
-          );
-        })}
-      </section>
-    </main>
+    <>
+      <header>
+        <img src={prettyGuardianLogo} alt="" />
+        <h1>Sailor Moon Memory</h1>
+      </header>
+      <main>
+        <div className="score">
+          <h2>High Score: {highScore}</h2>
+          <h2>Score: {clickedGifs.size}</h2>
+        </div>
+        <section className="card-holder">
+          {gifs.map((gif) => {
+            return (
+              <Card
+                url={gif.url}
+                title={gif.title}
+                key={gif.url}
+                onClick={() => handleCardClick(gif.url)}
+              />
+            );
+          })}
+        </section>
+      </main>
+    </>
   );
 };
