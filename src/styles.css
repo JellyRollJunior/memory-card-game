@@ -56,6 +56,8 @@ main {
 .card {
   max-width: 300px;
   border: 2px solid black;
+  border-radius: 21px;
+  overflow: hidden;
 }
 
 .card > img {
@@ -75,6 +77,10 @@ main {
     gap: 18px;
 
     padding: 12px;
+  }
+
+  .card {
+    border-width: 3px;
   }
 }
 

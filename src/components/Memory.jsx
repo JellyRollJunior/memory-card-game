@@ -47,9 +47,9 @@ const Memory = () => {
   return (
     <main>
       <h1>Memory</h1>
-      <div className='score'>
-        <div>Score: {clickedGifs.size}</div>
+      <div className="score">
         <div>High Score: {highScore}</div>
+        <div>Score: {clickedGifs.size}</div>
       </div>
       <section className="card-holder">
         {gifs.map((gif) => {
