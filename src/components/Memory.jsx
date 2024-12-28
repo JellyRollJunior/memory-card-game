@@ -54,6 +54,7 @@ const Memory = () => {
       <main>
         <div className="wrapper">
           <h1>Sailor Moon Memory</h1>
+          <h3>Get points by clicking on an image but don't click on any more than once!</h3>
           <div className="score">
             <h2>High Score: {highScore}</h2>
             <h2>Score: {clickedGifs.size}</h2>
