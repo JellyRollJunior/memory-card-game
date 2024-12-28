@@ -5,7 +5,6 @@ import './styles.css'
 function App() {
   return (
     <>
-      <h1>Memory</h1>
       <Memory></Memory>
     </>
   );
