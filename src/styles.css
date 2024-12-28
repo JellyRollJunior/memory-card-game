@@ -105,6 +105,18 @@ h2 {
   object-fit: fill;
 }
 
+footer .lace {
+  background-image: url(./assets/footer-bg.png);
+  background-position: center;
+  background-size: contain;
+  height: 38px;
+}
+
+footer .footer-content {
+  background-color: #b4aa82;
+  height: 100px;
+}
+
 @media (min-width: 700px) {
   header > img {
     max-width: 110px;
@@ -133,6 +145,10 @@ h2 {
   .card {
     border-width: 3px;
   }
+
+  footer {
+    margin-top: 16px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -140,9 +156,11 @@ h2 {
     max-width: 150px;
   }
 
-
-
   .card-holder {
     gap: 26px;
+  }
+
+  footer {
+    margin-top: 24px;
   }
 }

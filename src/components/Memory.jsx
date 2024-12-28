@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Card } from './Card.jsx';
 import { searchGifs } from './memoryAPI.js';
 import prettyGuardianLogo from './../assets/pretty-guardian-logo.png';
+import footerLace from './../assets/footer-bg.png';
 export { Memory };
 
 const Memory = () => {
@@ -71,6 +72,10 @@ const Memory = () => {
           </section>
         </div>
       </main>
+      <footer>
+        <div className="lace"></div>
+        <div className='footer-content'></div>
+      </footer>
     </>
   );
 };
