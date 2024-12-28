@@ -15,7 +15,7 @@ const getGifSearchEndpoint = (query, numResults) => {
 const processGifData = (json) => {
     const gifs = [];
     json.data.forEach((gif) => {
-      gifs.push( {url: gif.url, title: gif.title} );
+      gifs.push( {url: gif.images.original.url, title: gif.title} );
     });
     console.log(gifs);
     return gifs

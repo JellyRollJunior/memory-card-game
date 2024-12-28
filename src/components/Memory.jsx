@@ -10,12 +10,10 @@ const Memory = () => {
   const [gifs, setGifs] = useState([]);
 
   useEffect(() => {
-    const gifsData = searchGifs(THEME, NUM_CARDS);
-    setGifs(gifsData);
-  }, [])
+    searchGifs(THEME, NUM_CARDS)
+      .then((data) => setGifs(data));
+  }, []);
 
-  console.log(gifs);
-  
   return (
     <>
       <div>
@@ -23,7 +21,9 @@ const Memory = () => {
         <div>High Score: </div>
       </div>
       <section className="card-holder">
-        <Card></Card>
+        {gifs.map((gif) => {
+          return <Card url={gif.url} title={gif.title} key={gif.url} />;
+        })}
       </section>
     </>
   );

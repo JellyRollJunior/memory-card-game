@@ -1,11 +1,10 @@
-import prettyGuardianLogo from './../assets/pretty-guardian-logo.png'
 export { Card };
 
-const Card = () => {
+const Card = ({url, title}) => {
   return (
     <div className="card">
-      <img src={prettyGuardianLogo} alt="" />
-      <h3>Name</h3>
+      <img src={url} alt={title} />
+      <h3>{title}</h3>
     </div>
   );
 };
