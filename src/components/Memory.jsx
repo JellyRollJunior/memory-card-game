@@ -47,7 +47,7 @@ const Memory = () => {
   return (
     <main>
       <h1>Memory</h1>
-      <div>
+      <div className='score'>
         <div>Score: {clickedGifs.size}</div>
         <div>High Score: {highScore}</div>
       </div>
