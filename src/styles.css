@@ -54,7 +54,7 @@ main {
 }
 
 .card {
-  max-width: 250px;
+  max-width: 300px;
   border: 2px solid black;
 }
 
@@ -69,11 +69,17 @@ main {
     display: flex;
     gap: 12px;
   }
-  
+
   .card-holder {
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
 
     padding: 12px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .card-holder {
+    gap: 26px;
   }
 }
