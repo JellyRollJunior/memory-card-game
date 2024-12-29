@@ -71,7 +71,7 @@ header {
 }
 
 header > img {
-  max-width: 70px;
+  max-width: 150px;
 }
 
 main {
@@ -206,7 +206,7 @@ a.icon-instagram {
 
 @media (min-width: 700px) {
   header > img {
-    max-width: 110px;
+    max-width: 200px;
   }
 
   .wrapper {
@@ -240,7 +240,7 @@ a.icon-instagram {
 
 @media (min-width: 1400px) {
   header > img {
-    max-width: 150px;
+    max-width: 250px;
   }
 
   .card-holder {
