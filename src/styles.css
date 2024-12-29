@@ -44,6 +44,12 @@ html {
   background-position: center;
 }
 
+body {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+}
+
 header,
 main,
 .wrapper,
@@ -66,6 +72,10 @@ header {
 
 header > img {
   max-width: 70px;
+}
+
+main {
+  padding-bottom: 200px;
 }
 
 h1 {
@@ -111,7 +121,9 @@ h3 {
 }
 
 footer {
-  margin-top: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer .lace {
