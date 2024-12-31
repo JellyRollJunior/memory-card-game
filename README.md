@@ -1,8 +1,8 @@
 <h1 align="center">Sailor Moon Memory</h1>
 <h3 align="center">Play a Sailor Moon themed game of memory <a href='https://sailor-moon-memory.netlify.app/'>here</a>!</h3>
-
-<img align="center" width="" alt="" src="./project-images/demo.gif">
-
+<p align="center">
+    <img align="center" width="" alt="" src="./project-images/demo.gif">
+</p>
 ### Project for The Odin Project: [Lesson link](https://www.theodinproject.com/lessons/node-path-react-new-memory-card)
 
 ### Features
