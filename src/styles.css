@@ -1,3 +1,8 @@
+@font-face {
+  font-family: junge;
+  src: url(./assets/fonts/junge-regular-webfont.woff2);
+}
+
 *,
 *::before,
 *::after {
@@ -45,6 +50,7 @@ html {
 }
 
 body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
   min-height: 100vh;
   height: 100%;
@@ -76,6 +82,10 @@ header > img {
 
 main {
   padding-bottom: 200px;
+}
+
+h1{
+  font-family: junge;
 }
 
 h1 {
@@ -220,7 +230,7 @@ a.icon-instagram {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
   h3 {
