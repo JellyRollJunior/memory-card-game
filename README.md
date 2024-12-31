@@ -1,5 +1,5 @@
 <h1 align="center">Sailor Moon Memory</h1>
-<h3 align="center">Play a Sailor Moon themed game of memory <a href=''>here</a>!</h3>
+<h3 align="center">Play a Sailor Moon themed game of memory <a href='https://sailor-moon-memory.netlify.app/'>here</a>!</h3>
 
 <img align="center" width="" alt="" src="./project-images/demo.gif">
 
@@ -17,6 +17,7 @@
 - CSS
 - HTML
 - Git / GitHub
+- Netlify
 
 ## Learning Outcomes
 - First time using state, useEffect, and fetching API with react
