@@ -3,7 +3,6 @@
 <p align="center">
     <img align="center" width="" alt="" src="./project-images/demo.gif">
 </p>
-### Project for The Odin Project: [Lesson link](https://www.theodinproject.com/lessons/node-path-react-new-memory-card)
 
 ### Features
 -   Two stunning view modes!
@@ -46,3 +45,4 @@ This project was fun and not too complicated. The trickiest part was making the 
 | Assets  | [Pretty Guardians](https://prettyguardians.com/)|
 | Gifs    | [Giphy](https://giphy.com/)|
 | Icons   | icons8.com     |
+| Specs | [The Odin Project](https://www.theodinproject.com/lessons/node-path-react-new-memory-card) |
